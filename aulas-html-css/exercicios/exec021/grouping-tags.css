@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+body{
+    background-color: dimgray;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
+
+header{
+    background-color: whitesmoke;
+    padding: 10px;
+    margin: 20px ;
+}
+    h1, h2{
+        text-shadow: rgba(0, 0, 0, 0.315) 1.4px 2.4px 3.2px;
+    }
+
+    nav{
+        background-color: rgb(158, 157, 157);
+        padding: 3px;
+        box-shadow: rgba(50, 50, 93, 0.405) 0px 2px 5px -1px, rgba(0, 0, 0, 0.46) 0px 1px 3px -1px;
+    }
+
+        nav > a{
+            text-decoration: none;
+            font: bold 1em normal;
+            color: whitesmoke;
+            margin-right: 20px;
+        }
+            nav > a:hover{
+                color: purple;
+                text-decoration: underline;
+            }
+
+main{
+    background-color: whitesmoke;
+    padding: 10px;
+    margin: 20px ;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.29) 0px 5px 15px;
+}
+
+#subject{
+    font-weight: bolder;
+}
+    article{
+        background-color: rgb(231, 229, 229);
+        padding: 5px;
+    }
+
+        article > aside{
+            background-color: rgb(171, 170, 170);
+        }
+
+footer{
+    background-color: rgb(0, 0, 0);
+    color: whitesmoke;
+    padding: 8px;
+    margin: 0px;
+    text-align: center;
+}
+
+    footer > p{
+        margin: 0px;
+    }

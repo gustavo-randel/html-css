@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos em site</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+        <p>
+            Video saindo do meu servidor/pc. A tag video serve para inserir os videos dentro do site, entretanto a maneira a qual ela esta disposta no visual studio code pode não ser a mais optima para todos os navegadores. Da mesma maneira q foi feita com o audio, removendo o source interno da tag e adicionando um source abaixo, no caso do vídeo, o source src também.
+        </p>
+            <video poster="imagens/limoes-capa.png" controls width="500">
+                <source src="midia/meu-video-2.mp4" type="video/mp4">
+                <p>Seu navegador não é compatível com o arquivo de vídeo.</p>
+            </video>
+    <!-- HandBrake é uma ferramenta boa para diminuir o tamanho de arquivos de vídeo caso necessário -->
+    <!-- parametro with muda o tamanho, parametro poster te permite colocar uma thumbnail para o video. -->
+</body>
+</html>

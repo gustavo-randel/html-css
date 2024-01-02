@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens dinâmicas</title>
+</head>
+<body>
+    <H1>Imagens dinamicas / midias em html5</H1>
+        <p>
+            A ideia é poder abrir o site em muitos lugares e nao ter as imagem tudo fudida <br>
+            a ordem das imagens importa. menor em cima, maior embaixo.
+        </p>
+            <picture>
+                <source media="(max-width: 750px)" srcset="a/imagem-p.png" type="image/png">
+                <source media="(max-width: 1050px)" srcset="a/imagem-m.png" type="image/png"> 
+            
+                <img src="a/imagem-g.png" alt="imagem flexível">
+            </picture>
+    <h1>Reproduzindo áudios no site</h1>
+            <p>
+                A tag audio pode ser utilizada para inserir o audio no site de maneira mais simples, com o autoplay ele deverá tocar automaticamente, entretanto nem todo navegador funciona essa função, mas aliado ao parâmetro controls, vc deverá poder clicar no audio e tocá-lo tranquilamente. <br> Para evitar problemas com compatibilidade ou erros, crie a tag audio e remova o source que vem nela, criando seu proprio source src 
+            </p>
+                <audio preload="metadata" controls>
+                    <source src="audio/happy-mistake.mp3" type="audio/mpeg"> 
+                </audio>
+                    <!-- preload vai decidir oq carrega com o site, no auto o site so carrega dps q o audio carregar, com o none n vai carregar nada e o metadata carrega so os dados do arquivo, é o mais recomendado de se usar. -->
+                    <!-- tem mts parametros pra se por dentro do audio, como loop, autoplay, o controls -->
+</body>
+</html>

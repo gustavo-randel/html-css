@@ -1,0 +1,6 @@
+Cor principal: #3FDB90
+
+Paleta: #1B5C3C #85E1B5 #3FDB90 #365C4A #31A86F
+
+Fontes
+-Titulo: https://fonts.google.com/specimen/Bebas+Neue?query=bebas

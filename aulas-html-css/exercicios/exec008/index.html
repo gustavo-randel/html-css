@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="squirrel.ico" type="image/x-icon">
+    <title>Formatação de texto</title>
+    <style>
+       mark{
+        background-color: aqua;
+       } 
+    </style>
+</head>
+<body>
+    <h1>Principais formatações</h1>
+        <h2>Negrito / Destaque</h2>
+            <p>
+                da pra por negrito com <b>a tag bold (&lt;b&gt;) = não semantico</b>
+            </p>
+            <p>
+                aq tem outro termo em negrito usando <strong>a tag strong (&lt;strong&gt;) = semantico</strong>
+            </p>
+        <h2>Itálico</h2>
+            <p>
+                termo em itálico faz assim o Control + Shift + P e vai em <i>Wrap with abbreviation</i> mas a tag do bagulho é a &lt;i&gt;, essa paradinha de wrap eh pra caso vc tenha escrito algo e queira colocar a tag depois tlg. (lembrando q a tag i não é semantica)
+            </p>
+            <p>
+                Agora o jeito semantico, é com <em>a tag &lt;EM&gt;</em>
+            </p>
+        <!--OPTAR SEMPRE PELAS SEMANTICAS, NAO TEM SENTIDO USAR AS NAO SEMANTICAS PRA HTML-->
+        <h2>texto marcado</h2>
+            <p>Da pra <mark>marcar</mark> o seu texto usando a tag &lt;mark&gt;</p>
+            <p>entretanto, com o estilo feito aqui, se abrir outra marcação ela não herdará o estilo de cor que for colocado dentro da tag mark. </p>
+        <h2>Texto grande e pequeno</h2>
+            <p>
+                pra <small>diminuir</small> os textos, usa-se a tag &lt;small&gt;
+            </p>
+        <h2>Texto deletado/riscado</h2>
+    
+            <p> 
+              a tag <del>&lt;del&gt;</del> serve para indicar textos que devem ser lidos, entretanto não considerados  
+            </p>
+        <h2>Textos inseridos/sublinhados</h2>
+            <p>
+                a tag <ins>&lt;ins&gt;</ins> sublinha o seu texto
+            </p>
+        <h2>Texto sobrescrito (em cima) e subscrito (em baixo)</h2>
+            <p>
+                a tag &lt;sup&gt; coloca tudo dentro dela pra cima. A exemplo: <sup>1 2 3 4 5 </sup>
+            </p>
+            <p>
+                enquanto a tag &lt;sub&gt; faz com que tudo posto nela vá pra baixo. A exemplo: <sub>1 2 3 4 5</sub>
+            </p>
+            <p>
+                🐿️
+            </p>
+
+</body>
+</html>

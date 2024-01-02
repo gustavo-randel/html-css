@@ -1,0 +1,14 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'ComicSans';
+    src: url(fonts/Ldfcomicsans-jj7l.ttf);
+}
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@300;400;500;600;700;800&display=swap');
+body{
+    font: normal normal 1em 'ComicSans','Playpen Sans', 'cursive';
+    text-align: justify;
+    text-indent: 0px;
+}
+p{
+    text-indent: 20px;
+}

@@ -1,0 +1,18 @@
+@charset "UT-8";
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    background-color: lightgray;
+    height: 300px;
+    width: 300px;
+    border: 20px groove darkgray;
+    padding: 21px 21px 10px 10px;
+    margin: 25px auto 40px auto;
+    outline: 5px dashed salmon;
+}
+
+a{
+    border: 5px solid red;
+}
