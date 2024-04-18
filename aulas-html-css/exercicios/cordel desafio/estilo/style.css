@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+/*configs globais*/
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+html, body{
+    min-height: 100vh;
+    background-color: darkgray;
+
+}
+
+/*aba de título*/
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+        header > h1{
+            padding-top: 40px;
+            font-variant: small-caps;
+        }
+        header > p{
+            padding-bottom: 40px;
+        }
+   header a, footer a{
+        color: white;
+        text-decoration: none;
+        font-weight: bolder;
+    }
+    header a:hover , footer a:hover{
+        text-decoration: underline;
+        }
+
+/*seções gerais*/
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 25px;
+}
+
+    /*seções sem imagem*/
+    section.normal{
+        background-color: white;
+        color: black;
+    }
+
+    /*seções com imagem*/
+    section.image{
+        background-color: rgba(0, 0, 0, 0.281);
+        color: white;
+    }
+        section.image > p{
+            width: 300px;
+            background-color: rgba(0, 0, 0, 0.452);
+        }
+
+/*Rodapé*/
+footer{
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 5px;
+    }
