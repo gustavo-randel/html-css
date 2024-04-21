@@ -3,10 +3,10 @@
 
 /*media queries
 @media (max-width: 450px) {
-    h1{
+    header > h1{
         font-size: 30vw;
     }
-    p{
+    section > p{
         font-size: 30vw;
     }
 }
@@ -65,25 +65,36 @@ section{
     font-family: var(--russo);
     font-size: 3.5vw;
 }
-
-    /*seções sem imagem*/
-    section.normal{
-        background-color: white;
-        color: black;
+    section > p{
+        padding-bottom: 2em;
     }
 
-    /*seções com imagem*/
-    section.image{
-        display: inline-block;
-        padding: 5px;
-        background-color: rgba(0, 0, 0, 0.281);
-        color: white;
-    }
-        section.image > p{
-            width: 400px;
-            background-color: rgba(0, 0, 0, 0.452);
+        /*seções sem imagem*/
+        section.normal{
+            background-color: white;
+            color: black;
         }
 
+        /*seções com imagem - class*/
+        section.image{
+            background-color: rgba(0, 0, 0, 0.226);
+            color: white;
+        }
+            section.image > p{
+                display: inline-block;
+                background-color: rgba(0, 0, 0, 0.452);
+                padding: 5px;
+            }
+
+        /*Seções com imagem - id*/
+        section#img01{
+            background-image: url(../imagens/background001.jpg);
+            background-position: right center;
+        }
+
+        section#img02{
+            background-image: url(../imagens/background002.jpg);
+        }
 /*Rodapé*/
 footer{
     font-size: 0.8em;
