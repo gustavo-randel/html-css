@@ -1,16 +1,6 @@
-@charset "UTF-8";
+
 @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
 
-/*media queries
-@media (max-width: 450px) {
-    header > h1{
-        font-size: 30vw;
-    }
-    section > p{
-        font-size: 30vw;
-    }
-}
-*/
 /*configs globais*/
 *{
     padding: 0px;
@@ -63,7 +53,7 @@ section{
     line-height: 2em;
     padding-left: 25px;
     font-family: var(--russo);
-    font-size: 3.5vw;
+    /*font-size: 3.5vw; */
 }
     section > p{
         padding-bottom: 2em;
@@ -79,11 +69,15 @@ section{
         section.image{
             background-color: rgba(0, 0, 0, 0.226);
             color: white;
+            box-shadow: inset 4px 4px 15px 1px rgba(0, 0, 0, 0.63);
+            background-size: cover;
+            background-attachment: fixed;
         }
             section.image > p{
                 display: inline-block;
-                background-color: rgba(0, 0, 0, 0.452);
+                background-color: rgba(0, 0, 0, 0.459);
                 padding: 5px;
+                text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.42);
             }
 
         /*Seções com imagem - id*/
@@ -103,4 +97,71 @@ footer{
     color: white;
     padding: 5px;
     }
+
+/*media queries*/
+
+@media all and (min-width: 450px) {
+    p {
+            font-size: 1.5em;
+            line-height: 1.5em;
+        }
+    header {
+        height: 200px;
+    }
+        header > h1{
+            padding-top: 60px;
+            font-variant: small-caps;
+            font-family: var(--passion);
+            font-size: 6vh; /*4em anteriormente*/
+        }
+
+        header > p{
+            padding-bottom: 40px;
+            font-size: 1em;
+        }
+
     
+    section.normal {
+        padding: 5px;
+        padding-left: 30px;
+        padding-top: 30px;
+        margin-bottom: -20px;
+    }
+    
+    footer{
+    font-size: 0.5em;
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 5px; 
+}
+} 
+
+@media all and (min-width: 767px) {
+    section.image {
+        padding-left: 20px;
+    }
+        section.image > p{
+            display: inline-block;
+            padding: 5px;
+        }
+            section.image > p , section > p {
+                font-size: 3em;
+                line-height: 2em;
+                
+            }
+    header {
+        height: 300px;
+        }
+        header > h1{
+            padding-top: 80px;
+            font-variant: small-caps;
+            font-family: var(--passion);
+            font-size: 10vh; /*4em anteriormente*/
+        }
+
+        header > p{
+            padding-bottom: 40px;
+            font-size: 1.5em;
+        }
+}
