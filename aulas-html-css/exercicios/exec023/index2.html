@@ -6,10 +6,11 @@
     <title>tabelas grandes</title>
     <style>
         caption{
-            font-size: 1.3em;
+            font-size: 1.5em;
             font-weight: bold;
             padding: 5px;
-            background-color: lightgray;
+            color: white;
+            background-color: rgb(54, 54, 54);
             border-top: solid 1px black;
             border-left: solid 1px black;
             border-right: solid 1px black;  
@@ -21,9 +22,17 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
         thead, tfoot{
-            background-color: rgb(158, 158, 158);
+            background-color: rgb(122, 122, 122);
+        }
+        thead.fixed:has(th){
+            position: sticky;
+            top: -1px;
+        }
+        tbody > tr:nth-child(odd){
+            background-color: lightgray;
         }
         td, th{
             border: 1px solid black;
@@ -54,13 +63,117 @@
     -->
     <table>
         <caption>População das Unidades Federativas</caption>
-            <thead>
+            <thead class="fixed">
                 <tr>
                     <th scope="col">Estado</th> 
                     <th scope="col" style="width: 200px">População</th>
                 </tr>
             </thead>
             <tbody>
+                <tr>
+                    <td>São Paulo</td>
+                    <td class="number">44.420.459</td>
+                </tr>
+                <tr>
+                    <td>Minas Gerais</td>
+                    <td class="number">20.538.718</td>
+                </tr>
+                <tr>
+                    <td>Rio de Janeiro</td>
+                    <td class="number">16.054.524</td>
+                </tr>
+                <tr>
+                    <td>Bahia</td>
+                    <td class="number">14.136.417</td>
+                </tr>
+                <tr>
+                    <td>Paraná</td>
+                    <td class="number">11.443.208</td>
+                </tr>
+                <tr>
+                    <td>Rio Grande do Sul</td>
+                    <td class="number">10.880.506</td>
+                </tr>
+                <tr>
+                    <td>Pernambuco</td>
+                    <td class="number">9.058.155</td>
+                </tr>
+                <tr>
+                    <td>Ceará</td>
+                    <td class="number">8.791.688</td>
+                </tr>
+                <tr>
+                    <td>Pará</td>
+                    <td class="number">8.116.132</td>
+                </tr>
+                <tr>
+                    <td>Santa Catarina</td>
+                    <td class="number">7.609.601</td>
+                </tr>
+                <tr>
+                    <td>Goiás</td>
+                    <td class="number">7.055.228</td>
+                </tr>
+                <tr>
+                    <td>Maranhão</td>
+                    <td class="number">6.775.152</td>
+                </tr>
+                <tr>
+                    <td>Paraíba</td>
+                    <td class="number">3.974.495</td>
+                </tr>
+                <tr>
+                    <td>São Paulo</td>
+                    <td class="number">44.420.459</td>
+                </tr>
+                <tr>
+                    <td>Minas Gerais</td>
+                    <td class="number">20.538.718</td>
+                </tr>
+                <tr>
+                    <td>Rio de Janeiro</td>
+                    <td class="number">16.054.524</td>
+                </tr>
+                <tr>
+                    <td>Bahia</td>
+                    <td class="number">14.136.417</td>
+                </tr>
+                <tr>
+                    <td>Paraná</td>
+                    <td class="number">11.443.208</td>
+                </tr>
+                <tr>
+                    <td>Rio Grande do Sul</td>
+                    <td class="number">10.880.506</td>
+                </tr>
+                <tr>
+                    <td>Pernambuco</td>
+                    <td class="number">9.058.155</td>
+                </tr>
+                <tr>
+                    <td>Ceará</td>
+                    <td class="number">8.791.688</td>
+                </tr>
+                <tr>
+                    <td>Pará</td>
+                    <td class="number">8.116.132</td>
+                </tr>
+                <tr>
+                    <td>Santa Catarina</td>
+                    <td class="number">7.609.601</td>
+                </tr>
+                <tr>
+                    <td>Goiás</td>
+                    <td class="number">7.055.228</td>
+                </tr>
+                <tr>
+                    <td>Maranhão</td>
+                    <td class="number">6.775.152</td>
+                </tr>
+                <tr>
+                    <td>Paraíba</td>
+                    <td class="number">3.974.495</td>
+                </tr>
                 <tr>
                     <td>São Paulo</td>
                     <td class="number">44.420.459</td>
