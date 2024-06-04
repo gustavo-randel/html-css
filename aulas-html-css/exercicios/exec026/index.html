@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>fazendo formularios</h1>
+    <form action="cadastro.php" autocomplete="off">
+
+        <p>
+            <label for="name">Nome:</label> <input type="text" name="name" id="name">
+        </p>
+        <p>
+            <label for="lastname">Sobrenome:</label> <input type="text" name="lastname" id="lastname">
+        </p>
+            <p>
+                <input type="submit" value="Enviar">
+            </p>
+        </form>
+        <!-- 
+            Métodos de envio de formulario
+            GET: método padrão quando não há método definido, utilizado para campos comuns
+            POST: utilizado para campos sensíveis aka senhas, numero de cartao, cvv, envio de fotos etc.
+         -->
+</body>
+</html>
